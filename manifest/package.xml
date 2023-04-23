@@ -9,6 +9,10 @@
 		<name>AuraDefinitionBundle</name>
 	</types>
 	<types>
+		<members>Tutor__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>LightningComponentBundle</name>
 	</types>

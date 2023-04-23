@@ -38,7 +38,7 @@
 		<members>Tutor__c.First_Name__c</members>
 		<members>Tutor__c.Last_Name__c</members>
 		<members>Tutor__c.Seniority_Level__c</members>
-		<members>Tutor__c.Unavailable__c</members>
+		<members>Tutor__c.Available__c</members>
 		<name>CustomField</name>
 	</types>
 	<types>

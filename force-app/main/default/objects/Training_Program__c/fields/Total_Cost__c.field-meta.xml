@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Cost__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( Cost_by_level__c!=-1, IF(RecordType.Name==&apos;Private&apos;, 500 + Cost_by_level__c , IF(RecordType.Name==&apos;Public&apos;, 200 + Cost_by_level__c, -1)  ), -1)</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>Total Cost</label>
+    <precision>18</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackTrending>false</trackTrending>
+    <type>Currency</type>
+</CustomField>

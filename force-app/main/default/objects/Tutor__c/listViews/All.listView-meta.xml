@@ -6,6 +6,7 @@
     <columns>Last_Name__c</columns>
     <columns>Age__c</columns>
     <columns>Seniority_Level__c</columns>
+    <columns>Available__c</columns>
     <filterScope>Everything</filterScope>
     <label>Tutto</label>
 </ListView>

@@ -6,11 +6,27 @@
 	</types>
 	<types>
 		<members>*</members>
+		<name>ApexComponent</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexPage</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexTestSuite</name>
+	</types>
+	<types>
+		<members>*</members>
 		<name>ApexTrigger</name>
 	</types>
 	<types>
 		<members>Training_Program__c</members>
 		<members>Tutor__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Trainee__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>

@@ -23,9 +23,6 @@
 	<types>
 		<members>Training_Program__c</members>
 		<members>Tutor__c</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
 		<members>Trainee__c</members>
 		<name>CustomObject</name>
 	</types>

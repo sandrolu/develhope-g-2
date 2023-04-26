@@ -21,22 +21,8 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
-		<members>Training_Program__c.Cost_by_level__c</members>
-		<members>Training_Program__c.Level__c</members>
-		<members>Training_Program__c.Number_of_partecipants__c</members>
-		<members>Training_Program__c.Status__c</members>
-		<members>Training_Program__c.Total_Cost__c</members>
-		<name>CustomField</name>
-	</types>
-	<types>
 		<members>Training_Program__c</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
 		<members>Tutor__c</members>
-		<name>CustomObject</name>
-	</types>
-	<types>
 		<members>Trainee__c</members>
 		<name>CustomObject</name>
 	</types>

@@ -21,14 +21,24 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>Trainee__c</members>
 		<members>Training_Program__c</members>
 		<members>Tutor__c</members>
-		<members>Trainee__c</members>
 		<name>CustomObject</name>
 	</types>
 	<types>
 		<members>*</members>
 		<name>CustomTab</name>
+	</types>
+	<types>
+		<members>Trainee__c-Trainee Layout</members>
+		<members>Training_Program__c-Training Program Layout</members>
+		<members>Tutor__c-Tutor Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
+		<members>Admin</members>
+		<name>Profile</name>
 	</types>
 	<types>
 		<members>Training_Program__c.Private</members>

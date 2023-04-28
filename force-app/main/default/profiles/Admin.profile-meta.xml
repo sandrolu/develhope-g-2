@@ -13,6 +13,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Trainee__c.Training_Program__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Trainee__c.Training_program_feedback__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -51,6 +56,57 @@
         <field>Tutor__c.Seniority_Level__c</field>
         <readable>false</readable>
     </fieldPermissions>
+        <editable>true</editable>
+        <field>Training_Program__c.Cost_by_level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Training_Program__c.Number_of_partecipants__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Training_Program__c.Total_Cost__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tutor__c.Age__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tutor__c.Available__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tutor__c.Seniority_Level__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Tutor__c.Training_Program__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <layoutAssignments>
+        <layout>Trainee__c-Trainee Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Training_Program__c-Training Program Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Training_Program__c-Training Program Layout</layout>
+        <recordType>Training_Program__c.Private</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Training_Program__c-Training Program Layout</layout>
+        <recordType>Training_Program__c.Public</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Tutor__c-Tutor Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>

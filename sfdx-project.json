@@ -5,7 +5,7 @@
       "default": true
     }
   ],
-  "name": "MyBranchProject",
+  "name": "DevelhopeTennisProject",
   "namespace": "",
   "sfdcLoginUrl": "https://login.salesforce.com",
   "sourceApiVersion": "56.0"

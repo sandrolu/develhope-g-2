@@ -15,11 +15,16 @@ trigger PTTutorAssignment on Training_Program__c (before insert, before update, 
         List<Tutor__c> tutorDone=new List<Tutor__c>();
         for(Training_Program__c pt : Pts){
             if(pt.Status__c=='Designed' && pt.Tutors__r.size()==0){
+                try{
                 Tutor__c tutorMatched =MatchingTutorManager.matchingTutorMap(pt.Level_Number__c,tutorLevelMap);
                 tutorMatched.Training_Program__c=pt.Id;
                 tutorToUpdate.add(tutorMatched);
-                }
                 //pt.Status__c='Doing';
+                }catch(NullPointerException e){
+                    trigger.newmap.get(pt.id).addError('Non c\'è nessun Tutor disponibile');
+                    System.debug('Non c\'è nessun tutor disponibile '+e.getMessage());
+                }
+            }
             if(pt.Status__c=='Done' && pt.Tutors__r.size()!=0){
                 for(Tutor__c tut : pt.Tutors__r){
                     tut.Training_Program__c=null;

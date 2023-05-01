@@ -31,6 +31,23 @@ public class MatchingTutorManager {
         return result;
     }
     
+    public static Tutor__c matchingTutorMap(Decimal ptLvl, Map<Decimal,List<Tutor__c>> tutorsMap){
+        //List<Decimal> ptLvlList=new List<Decimal>();
+        List<Tutor__c> matchingTutors;
+        /*for(Decimal i=ptLvl; i<=5;i++){
+            ptLvlList.add(i);
+        }*/
+        for(Decimal i=ptLvl; i<=5;i++){
+            if(tutorsMap.containsKey(i)){
+               matchingTutors= tutorsMap.get(i);
+                break;
+            }
+        }
+        matchingTutors[0].Available__c=false;
+            return matchingTutors[0];
+        
+    }
+    
     public static boolean isMatched(String[] levelList, String lvlTutor){
         boolean result = false;
         for(String lvl:levelList){

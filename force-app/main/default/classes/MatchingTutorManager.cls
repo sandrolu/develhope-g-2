@@ -1,5 +1,5 @@
 public class MatchingTutorManager {
-    public static String[] getWhereCondition(String lvlPt){
+    /*public static String[] getWhereCondition(String lvlPt){
        String[] result=new String[5];
         switch on lvlPt{
             when 'Entry'{
@@ -29,7 +29,7 @@ public class MatchingTutorManager {
             }
         }
         return result;
-    }
+    } */
     
     public static Tutor__c matchingTutorMap(Decimal ptLvl, Map<Decimal,List<Tutor__c>> tutorsMap){
         //List<Decimal> ptLvlList=new List<Decimal>();
@@ -48,13 +48,4 @@ public class MatchingTutorManager {
         
     }
     
-    public static boolean isMatched(String[] levelList, String lvlTutor){
-        boolean result = false;
-        for(String lvl:levelList){
-            if(lvlTutor == lvl){
-                result = true;
-            }
-        }
-        return result;
-    }
 }

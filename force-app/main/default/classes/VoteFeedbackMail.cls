@@ -5,12 +5,12 @@ public with sharing class EmailManager {
         List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
 
         for (Trainee__c IterateFeedback : feedbackInputs) {
-            Id Trainee = Trainee__c.Id;
-            Integer Vote = Trainee__c.Vote__c;
-            String Feedback = Trainee__c.Training_program_feedback__c;
+            Id Trainee = IterateFeedback.Id;
+            Decimal Vote = IterateFeedback.Vote__c;
+            String Feedback = IterateFeedback.Training_program_feedback__c;
 
-            Trainee__c getTraineeEmail = [SELECT Email_address__c FROM Trainee__c WHERE Id = :Trainee__c.Id LIMIT 1];
-            String TraineeEmail = Trainee__c.Email_address__c;
+            Trainee__c getTraineeEmail = [SELECT Email_address__c FROM Trainee__c WHERE Id = :IterateFeedback.Id LIMIT 1];
+            String TraineeEmail = IterateFeedback.Email_address__c;
 
             Messaging.SingleEmailMessage email = new Messaging.SingleEmailMessage();
 
@@ -31,6 +31,6 @@ public with sharing class EmailManager {
           
         }
 
-        Messaging.sendEmail(new Messaging.SingleEmailMessage[] { emails });
+        Messaging.sendEmail(emails);
     }
 }

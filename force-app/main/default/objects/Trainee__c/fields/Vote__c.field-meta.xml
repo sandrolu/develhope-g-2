@@ -3,11 +3,10 @@
     <fullName>Vote__c</fullName>
     <externalId>false</externalId>
     <label>Vote</label>
-    <precision>2</precision>
+    <length>15</length>
     <required>false</required>
-    <scale>0</scale>
     <trackHistory>false</trackHistory>
     <trackTrending>false</trackTrending>
-    <type>Number</type>
+    <type>Text</type>
     <unique>false</unique>
 </CustomField>

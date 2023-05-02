@@ -27,6 +27,10 @@
 		<name>CustomTab</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Flow</name>
+	</types>
+	<types>
 		<members>Trainee__c-Trainee Layout</members>
 		<members>Training_Program__c-Training Program Layout</members>
 		<members>Tutor__c-Tutor Layout</members>

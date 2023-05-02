@@ -1,4 +1,4 @@
-public with sharing class EmailManager {
+public with sharing class VoteFeedbackMail {
     @InvocableMethod (label='SendMail'description ='Return mail with feedback and vote' category ='Trainee_c')
     public static void sendFeedbackEmail(List<Trainee__c> feedbackInputs){
         feedbackInputs = [SELECT ID, Training_program_feedback__c, Vote__c FROM Trainee__c];

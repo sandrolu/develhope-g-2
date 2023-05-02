@@ -6,7 +6,7 @@ public with sharing class EmailManager {
 
         for (Trainee__c IterateFeedback : feedbackInputs) {
             Id Trainee = IterateFeedback.Id;
-            Decimal Vote = IterateFeedback.Vote__c;
+            String Vote = IterateFeedback.Vote__c;
             String Feedback = IterateFeedback.Training_program_feedback__c;
 
             Trainee__c getTraineeEmail = [SELECT Email_address__c FROM Trainee__c WHERE Id = :IterateFeedback.Id LIMIT 1];

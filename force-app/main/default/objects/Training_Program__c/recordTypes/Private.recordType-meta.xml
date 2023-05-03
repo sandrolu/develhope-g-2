@@ -7,23 +7,23 @@
     <picklistValues>
         <picklist>Level__c</picklist>
         <values>
-            <fullName>Entry</fullName>
+            <fullName>1</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>High</fullName>
+            <fullName>2</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Low</fullName>
+            <fullName>3</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Medium</fullName>
+            <fullName>4</fullName>
             <default>false</default>
         </values>
         <values>
-            <fullName>Professional</fullName>
+            <fullName>5</fullName>
             <default>false</default>
         </values>
     </picklistValues>

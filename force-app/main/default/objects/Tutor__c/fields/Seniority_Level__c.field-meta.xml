@@ -12,27 +12,27 @@
         <valueSetDefinition>
             <sorted>false</sorted>
             <value>
-                <fullName>Entry</fullName>
+                <fullName>1</fullName>
                 <default>false</default>
                 <label>Entry</label>
             </value>
             <value>
-                <fullName>Low</fullName>
+                <fullName>2</fullName>
                 <default>false</default>
                 <label>Low</label>
             </value>
             <value>
-                <fullName>Medium</fullName>
+                <fullName>3</fullName>
                 <default>false</default>
                 <label>Medium</label>
             </value>
             <value>
-                <fullName>High</fullName>
+                <fullName>4</fullName>
                 <default>false</default>
                 <label>High</label>
             </value>
             <value>
-                <fullName>Professional</fullName>
+                <fullName>5</fullName>
                 <default>false</default>
                 <label>Professional</label>
             </value>

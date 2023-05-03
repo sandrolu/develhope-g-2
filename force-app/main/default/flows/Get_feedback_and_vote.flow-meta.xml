@@ -3,8 +3,8 @@
     <actionCalls>
         <name>FeedbackInvocable</name>
         <label>FeedbackInvocable</label>
-        <locationX>411</locationX>
-        <locationY>292</locationY>
+        <locationX>856</locationX>
+        <locationY>168</locationY>
         <actionName>VoteFeedbackMail</actionName>
         <actionType>apex</actionType>
         <connector>
@@ -12,7 +12,10 @@
         </connector>
         <flowTransactionModel>Automatic</flowTransactionModel>
         <inputParameters>
-            <name>feedbackInputs</name>
+            <name>trainee</name>
+            <value>
+                <elementReference>traineeId</elementReference>
+            </value>
         </inputParameters>
     </actionCalls>
     <apiVersion>57.0</apiVersion>
@@ -66,24 +69,12 @@
     <recordUpdates>
         <name>Update_feedback_and_vote</name>
         <label>Update feedback and vote</label>
-        <locationX>121</locationX>
-        <locationY>373</locationY>
+        <locationX>529</locationX>
+        <locationY>89</locationY>
         <connector>
             <targetReference>FeedbackInvocable</targetReference>
         </connector>
-        <inputAssignments>
-            <field>Training_program_feedback__c</field>
-            <value>
-                <elementReference>Feedback</elementReference>
-            </value>
-        </inputAssignments>
-        <inputAssignments>
-            <field>Vote__c</field>
-            <value>
-                <elementReference>YourVote</elementReference>
-            </value>
-        </inputAssignments>
-        <object>Trainee__c</object>
+        <inputReference>traineeId</inputReference>
     </recordUpdates>
     <screens>
         <name>Email_sent</name>
@@ -104,7 +95,7 @@
     <screens>
         <name>Insert_feedback_and_vote</name>
         <label>Insert feedback and vote</label>
-        <locationX>203</locationX>
+        <locationX>205</locationX>
         <locationY>241</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
@@ -113,23 +104,16 @@
             <targetReference>Update_feedback_and_vote</targetReference>
         </connector>
         <fields>
-            <name>YourVote</name>
-            <choiceReferences>Vote1</choiceReferences>
-            <choiceReferences>Vote2</choiceReferences>
-            <choiceReferences>Vote3</choiceReferences>
-            <choiceReferences>Vote4</choiceReferences>
-            <choiceReferences>Vote5</choiceReferences>
-            <dataType>String</dataType>
-            <fieldType>RadioButtons</fieldType>
+            <fieldType>ObjectProvided</fieldType>
             <isRequired>false</isRequired>
+            <objectFieldReference>traineeId.Vote__c</objectFieldReference>
         </fields>
         <fields>
-            <name>Feedback</name>
-            <dataType>String</dataType>
-            <fieldText>Feedback</fieldText>
-            <fieldType>InputField</fieldType>
-            <isRequired>true</isRequired>
+            <fieldType>ObjectProvided</fieldType>
+            <isRequired>false</isRequired>
+            <objectFieldReference>traineeId.Training_program_feedback__c</objectFieldReference>
         </fields>
+        <helpText>&lt;p&gt;Give us a vote on a scale from 1 to 5&lt;/p&gt;</helpText>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
@@ -142,13 +126,11 @@
     </start>
     <status>Draft</status>
     <variables>
-        <name>PTFeedback</name>
-        <dataType>String</dataType>
+        <name>traineeId</name>
+        <dataType>SObject</dataType>
         <isCollection>false</isCollection>
         <isInput>true</isInput>
-        <isOutput>true</isOutput>
-        <value>
-            <elementReference>Feedback</elementReference>
-        </value>
+        <isOutput>false</isOutput>
+        <objectType>Trainee__c</objectType>
     </variables>
 </Flow>

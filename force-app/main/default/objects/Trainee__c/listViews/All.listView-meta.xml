@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ListView xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>All</fullName>
+    <columns>NAME</columns>
+    <columns>First_name__c</columns>
+    <columns>Last_name__c</columns>
+    <columns>Age__c</columns>
+    <columns>Email_address__c</columns>
+    <columns>Training_Program__c</columns>
+    <columns>Training_program_feedback__c</columns>
+    <columns>Vote__c</columns>
+    <columns>Email_sent__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>

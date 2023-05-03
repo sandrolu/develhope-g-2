@@ -8,6 +8,11 @@
         <apexClass>PTTutorAssignmentTest</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <applicationVisibilities>
+        <application>Tennis_World</application>
+        <default>false</default>
+        <visible>true</visible>
+    </applicationVisibilities>
     <custom>false</custom>
     <fieldPermissions>
         <editable>true</editable>

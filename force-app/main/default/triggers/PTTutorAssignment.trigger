@@ -22,7 +22,7 @@ trigger PTTutorAssignment on Training_Program__c (before insert, before update, 
                 //pt.Status__c='Doing';
                 }catch(NullPointerException e){
                     trigger.newmap.get(pt.id).addError('Non c\'è nessun Tutor disponibile');
-                    System.debug('Non c\'è nessun tutor disponibile '+e.getMessage());
+                    //System.debug('Non c\'è nessun tutor disponibile '+e.getMessage());
                 }
             }
             if(pt.Status__c=='Done' && pt.Tutors__r.size()!=0){

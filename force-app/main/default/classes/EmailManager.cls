@@ -6,5 +6,5 @@ public class EmailManager {
         mail.setPlainTextBody(body);
         Messaging.sendEmail(new Messaging.SingleEmailMessage[] { mail });
     }
-    
+
 }

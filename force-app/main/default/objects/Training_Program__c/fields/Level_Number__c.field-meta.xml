@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Cost_by_level__c</fullName>
+    <fullName>Level_Number__c</fullName>
     <externalId>false</externalId>
-    <formula>CASE( Level__c , &apos;1&apos;, 200, &apos;2&apos;, 400, &apos;3&apos;, 600, &apos;4&apos;, 800, &apos;5&apos;, 1000,-1)</formula>
+    <formula>Value(Text(Level__c))</formula>
     <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
-    <label>Cost by level</label>
+    <label>Level_Number</label>
     <precision>18</precision>
     <required>false</required>
-    <scale>2</scale>
+    <scale>0</scale>
     <trackTrending>false</trackTrending>
-    <type>Currency</type>
+    <type>Number</type>
+    <unique>false</unique>
 </CustomField>

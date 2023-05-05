@@ -65,7 +65,7 @@
             <fieldText>&lt;p&gt;An email has been sent to your address with your feedback and vote.&lt;/p&gt;</fieldText>
             <fieldType>DisplayText</fieldType>
         </fields>
-        <showFooter>true</showFooter>
+        <showFooter>false</showFooter>
         <showHeader>true</showHeader>
     </screens>
     <screens>

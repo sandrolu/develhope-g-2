@@ -17,6 +17,10 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>ContentAsset</name>
+	</types>
+	<types>
 		<members>Tennis_World</members>
 		<name>CustomApplication</name>
 	</types>

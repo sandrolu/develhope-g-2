@@ -6,14 +6,13 @@ global class BatchEmail implements Database.Batchable<sObject> {
 
     global void execute(Database.BatchableContext BC, List<sObject> scope) {
         List<Messaging.SingleEmailMessage> emails = new List<Messaging.SingleEmailMessage>();
-        Set<String> sentEmails = new Set<String>();
         for (sObject s : scope) {
             Trainee__c t = (Trainee__c) s;
             List<String> toAddresses = new List<String>{ t.Email__c };
             String subject = 'Oggetto della mail';
             String body = 'Testo della mail';
             EmailManager.sendMail(toAddresses, subject, body);
-            sentEmails.add(t.Email__c);
+            
         }
     }
 

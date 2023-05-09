@@ -12,6 +12,10 @@
         <apexClass>EmailManager</apexClass>
         <enabled>true</enabled>
     </classAccesses>
+    <classAccesses>
+        <apexClass>VoteFeedbackMail</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
     <applicationVisibilities>
         <application>Tennis_World</application>
         <default>false</default>
@@ -26,6 +30,11 @@
     <fieldPermissions>
         <editable>true</editable>
         <field>Trainee__c.Email_sent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Trainee__c.Rating__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>

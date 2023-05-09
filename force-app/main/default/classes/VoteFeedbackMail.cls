@@ -3,7 +3,7 @@ public with sharing class VoteFeedbackMail {
     public static void sendFeedbackEmail(List<Trainee__c> trainee){
         //vecchia query
         //trainee = [SELECT ID, Training_program_feedback__c, Vote__c FROM Trainee__c];
-        String vote= trainee[0].Vote__c;
+        Double rating= trainee[0].Rating__c;
         String feedback=trainee[0].Training_program_feedback__c;
 
         //vecchio ciclo
@@ -20,10 +20,10 @@ public with sharing class VoteFeedbackMail {
             
             String body = ('Hello!\n');
             body += ('Thanks for giving a feedback about our Training Program. ');
-            body += 'Your vote is: ' + vote + '/5\n\n';
+            body += 'Your vote is: ' + rating + '/5\n\n';
             body += 'See you for next Training Program,\n';
             body += 'Tennis World';
     
             EmailManager.sendMail(toAddresses, subject, body);                           
         }   
-} 
+}

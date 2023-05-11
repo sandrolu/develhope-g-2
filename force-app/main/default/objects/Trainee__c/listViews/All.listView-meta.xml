@@ -9,7 +9,7 @@
     <columns>Training_Program__c</columns>
     <columns>Training_program_feedback__c</columns>
     <columns>Vote__c</columns>
-    <columns>Email_sent__c</columns>
+    <columns>Thank_You_Email_Sent__c</columns>
     <filterScope>Everything</filterScope>
     <label>All</label>
 </ListView>
